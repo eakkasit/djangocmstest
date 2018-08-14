@@ -45,7 +45,7 @@ ROOT_URLCONF = 'mysite.urls'
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'sk'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'Europe/Budapest'
 
@@ -143,20 +143,20 @@ INSTALLED_APPS = (
 
 LANGUAGES = (
     ## Customize this
-    ('sk', gettext('sk')),
+    ('en', gettext('en')),
 )
 
 CMS_LANGUAGES = {
     ## Customize this
-    1: [
-        {
-            'code': 'sk',
-            'name': gettext('sk'),
-            'redirect_on_fallback': True,
-            'public': True,
-            'hide_untranslated': False,
-        },
-    ],
+    # 1: [
+    #     {
+    #         'code': 'sk',
+    #         'name': gettext('sk'),
+    #         'redirect_on_fallback': True,
+    #         'public': True,
+    #         'hide_untranslated': False,
+    #     },
+    # ],
     'default': {
         'redirect_on_fallback': True,
         'public': True,
